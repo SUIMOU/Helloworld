@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function calculate(){
+			var total = 0;
+			var x,y;
+			var tax
+			x = document.getElementById("cocacola").checked;
+			y = document.getElementById("nasigoreng").checked;
+			console.log(x);
+			console.log(y);
+			if(x=true){
+				total = total + 1.50;
+			}
+			if(y=true){
+				total = total + 5.50;
+			}
+			tax=(6.0/100)*total;alert("Total:" + total + "Tax:" + tax + " Grand total: " + (total + tax));
+		}
+
+	</script>
+</head>
+<body>
+<input type="checkbox" id="cocacola">RM1.50  coca cola>
+</br>
+<input type="checkbox" id="nasigoreng">RM5.50  Nasi Goreng>
+</br>
+<input type="submit" onclick="calculate()" >
+</body>
+</html>
